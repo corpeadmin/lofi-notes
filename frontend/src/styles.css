@@ -68,7 +68,7 @@ a {
 /* ---------- layout ---------- */
 
 .content {
-  width: 100%;
+  width: 99%;
   max-width: 680px;
   margin: 0 auto;
   padding: 32px 24px 60px;
@@ -304,4 +304,26 @@ a {
 
 .muted {
   color: var(--ink-soft);
+}
+
+/* ---------- dark mode ---------- */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1e1b18;
+    --card: #28231f;
+    --ink: #f1e7dc;
+    --ink-soft: #b9aa9b;
+    --line: #40372f;
+    --accent: #d98e6a;
+    --accent-dark: #e5a07d;
+    --danger: #d47a6a;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  }
+
+  .note-form input,
+  .note-form textarea {
+    background: #211e1b;
+    color: var(--ink);
+  }
 }

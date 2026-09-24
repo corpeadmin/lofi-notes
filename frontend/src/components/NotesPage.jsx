@@ -74,6 +74,9 @@ export default function NotesPage() {
           </button>
         </form>
 
+        {/* Gentle reminder to write things down (Git exercise: Option 2). */}
+        <p className="notes-helper">Write something down.</p>
+
         <section className="notes-list">
           <h2>Notes</h2>
           {loading ? (

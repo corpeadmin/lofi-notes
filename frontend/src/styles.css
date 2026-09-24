@@ -446,3 +446,17 @@ a {
     font-size: 2.1rem;
   }
 }
+
+.btn {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(90, 70, 50, 0.12);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+

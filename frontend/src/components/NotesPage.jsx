@@ -47,9 +47,9 @@ export default function NotesPage() {
         <Link to="/" className="brand">
           &#9834; Lofi Notes
         </Link>
-        <nav>
-          <Link to="/" className="nav-link">
-            Home
+        <nav className="topbar-nav">
+          <Link to="/focus" className="nav-link">
+            Focus corner
           </Link>
         </nav>
       </header>

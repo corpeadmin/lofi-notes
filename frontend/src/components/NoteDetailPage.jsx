@@ -76,9 +76,12 @@ export default function NoteDetailPage() {
         <Link to="/" className="brand">
           &#9834; Lofi Notes
         </Link>
-        <nav>
+        <nav className="topbar-nav">
           <Link to="/notes" className="nav-link">
             All notes
+          </Link>
+          <Link to="/focus" className="nav-link">
+            Focus corner
           </Link>
         </nav>
       </header>

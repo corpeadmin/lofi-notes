@@ -25,14 +25,30 @@ export default function LandingPage() {
 
   const toggleDarkMode = () => {
     const newMode = !darkMode;
-    setDarkMode(newMode);
 
+    setDarkMode(newMode);
     document.documentElement.classList.toggle("dark-mode", newMode);
     localStorage.setItem("theme", newMode ? "dark" : "light");
   };
 
   return (
     <div className="page landing">
+      <header className="topbar landing-topbar">
+        <Link to="/" className="brand">
+          &#9834; Lofi Notes
+        </Link>
+
+        <nav className="topbar-nav">
+          <Link to="/notes" className="nav-link">
+            All notes
+          </Link>
+
+          <Link to="/focus" className="nav-link">
+            Focus corner
+          </Link>
+        </nav>
+      </header>
+
       <main className="landing-card">
         <p className="eyebrow">a cozy little place for your thoughts</p>
 
@@ -48,8 +64,8 @@ export default function LandingPage() {
             Open my notes
           </Link>
 
-          <Link to="/notes" className="btn ghost">
-            Peek inside
+          <Link to="/focus" className="btn ghost">
+            Visit the focus corner
           </Link>
 
           <button className="btn ghost" onClick={toggleDarkMode}>

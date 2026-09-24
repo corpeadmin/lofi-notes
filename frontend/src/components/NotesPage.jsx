@@ -47,9 +47,9 @@ export default function NotesPage() {
         <Link to="/" className="brand">
           &#9834; Lofi Notes
         </Link>
-        <nav>
-          <Link to="/" className="nav-link">
-            Home
+        <nav className="topbar-nav">
+          <Link to="/focus" className="nav-link">
+            Focus corner
           </Link>
         </nav>
       </header>
@@ -73,6 +73,9 @@ export default function NotesPage() {
             Save note
           </button>
         </form>
+
+        {/* Gentle reminder to write things down (Git exercise: Option 2). */}
+        <p className="notes-helper">Write something down.</p>
 
         <section className="notes-list">
           <h2>Notes</h2>
